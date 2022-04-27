@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  /* font-size: calc(10px + 2vmin); */
+  padding: 30px;
+  background-color: rgb(159, 194, 247);
+  min-height: 800px;
+  width: 50%;
+  /* background-image: url('../public/logo192.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 75%; */
 }
 
 .App-logo {
@@ -13,15 +21,13 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-body {
+  padding: 0px 0px 0px 100px;
+}
+
+.App-body > ul > li::marker {
+  font-size: 2rem;
+  color: cadetblue;
 }
 
 .App-link {
@@ -35,4 +41,142 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo-image{
+  width: 40px;
+}
+
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 10px 50px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+/* ----latihan 2--- */
+@keyframes photo-profile {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.photo-profile{
+  width: 10%;
+  background-color: #2f3747;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.body-name{
+  background-color: #16191f;
+  padding: 10px 50px 10px 50px;
+  margin:-10px 35% 0 35%;
+}
+
+.profile-name{
+  font-weight: 700;
+}
+
+.body-name > h5 {
+  text-align: left;
+}
+
+.body-name > span {
+  text-align: left;
+}
+
+/* LATIHAN 2 */
+.test-header{
+  text-align: center;
+  background-color: brown;
+  padding: 20px;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.App-test{
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.test-body{
+  padding: 20px;
+  display: grid;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.test-card-body{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.test-card-detail{
+  margin: 0px 10px 0px 10px;
+  font-size: 15pt;
+}
+
+.test-card-detail > p{
+  margin:5px 10px 5px 5px;
+  font-size: 15pt;
+}
+
+.test-card-detail > h3{
+  margin:0px 0px 0px 5px;
+}
+
+.test--img{
+  width: 200px;
+  height: auto;
+  object-fit: cover;  
+  border-radius: 10px;
+  float : left;
+}
+
+/* V3 */
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap : 17px;
+}
+
+form-inputs {
+  font-family: "Karla",sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-indent: 5px;
+}
+
+.form-button {
+  grid-column: 1/-1;
+}
+
+.form-picture{
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  grid-column: 1/-1;
 }
